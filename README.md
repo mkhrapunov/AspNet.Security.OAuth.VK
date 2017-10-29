@@ -1,6 +1,9 @@
 # AspNet.Security.OAuth.VK
 VK (VKontakte) OAuth for ASP.NET Core 2  
 
+## Reference  
+Auth for ASP.NET Core 1.1 Vkontakte is placed in https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers/tree/dev/src/AspNet.Security.OAuth.Vkontakte. This project provides such ability for Core 2 apps. 
+
 ## Pakage  
 https://www.nuget.org/packages/AspNet.Security.OAuth.VK/
 
