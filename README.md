@@ -15,7 +15,9 @@ services
 	.AddVK(options =>
 	{
 		options.ClientId = "YOUR_CLIENT_ID";
-		options.ClientSecret = "YOUR_APP_ID";
+		options.ClientId = "YOUR_CLIENT_ID";
+
+		options.ApiVersion = "8.57"; // VK api version
 
 		// Request for permissions https://vk.com/dev/permissions?f=1.%20Access%20Permissions%20for%20User%20Token
 		options.Scope.Add("email");
