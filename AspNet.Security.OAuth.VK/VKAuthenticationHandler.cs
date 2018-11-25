@@ -21,6 +21,8 @@ namespace AspNet.Security.OAuth.VK
         {
             var address = QueryHelpers.AddQueryString(Options.UserInformationEndpoint, "access_token", tokens.AccessToken);
 
+            address = QueryHelpers.AddQueryString(address, "v", Options.ApiVersion);
+
             if (Options.Fields.Count != 0)
             {
                 address = QueryHelpers.AddQueryString(address, "fields", string.Join(",", Options.Fields));
@@ -49,7 +51,6 @@ namespace AspNet.Security.OAuth.VK
                     user.Add(scope, scope_value);
                 }
             }
-
 
             var context = new OAuthCreatingTicketContext(new ClaimsPrincipal(identity), properties, Context, Scheme, Options, Backchannel, tokens, user);
 

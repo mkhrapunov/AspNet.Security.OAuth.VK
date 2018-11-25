@@ -18,5 +18,7 @@ namespace AspNet.Security.OAuth.VK
         }
 
         public ISet<string> Fields { get; } = new HashSet<string>();
+
+        public string ApiVersion { get; set; } = "8.57";
     }
 }
